@@ -1,5 +1,7 @@
 import './App.css'
-import { EventHandler } from 'react'
+import Counter from './Count'
+import Team from './Team'
+import Users from './Users'
 
 function App() {
   function handleClick(){
@@ -20,7 +22,9 @@ function App() {
       <button onClick={handleClick2}>Click me2</button>
       <button onClick={()=>{alert('third click')}}>Click third</button>
       <button onClick={()=>addToFive(5)}>Click Four</button>
-     
+     <Counter></Counter>
+     <Team></Team>
+     <Users></Users>
     </>
   )
 }
